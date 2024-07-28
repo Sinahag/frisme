@@ -1,0 +1,199 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4; /* Light grey background */
+}
+
+header {
+    background-color: #e0f7fa; /* Light blue background */
+    color: #004080;
+    padding: 1rem 2rem;
+    border-bottom: 3px solid #4a86b8; /* Darker blue border */
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    max-width: 150px; /* Larger size */
+    height: auto;
+    margin-right: 1rem;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+nav {
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    color: #004080;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    background-color: #b3e5fc; /* Light blue for navigation links */
+    font-size: 1rem;
+}
+
+nav a:hover {
+    background-color: #81d4fa; /* Darker blue for hover */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+h2 {
+    color: #004080; /* Soft blue for section headings */
+    border-bottom: 2px solid #0056b3; /* Blue underline for headings */
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.content {
+    margin-bottom: 2rem;
+}
+
+.content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Rounded corners for images */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light grey shadow */
+}
+
+.button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    color: white;
+    background-color: #0056b3; /* Muted blue button background */
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #003366; /* Darker blue on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #e0f7fa; /* Light blue footer background */
+    color: #004080;
+    border-top: 3px solid #4a86b8; /* Blue border on top */
+}
+
+.feedback-form, .support-info {
+    background-color: #ffffff; /* White background */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light grey shadow */
+    margin-bottom: 2rem;
+}
+
+.feedback-form h3, .support-info h3 {
+    margin-top: 0;
+    color: #004080; /* Soft blue for section titles */
+}
+
+.feedback-form p {
+    margin-bottom: 1rem;
+}
+
+.feedback-form label {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.feedback-form input[type="email"],
+.feedback-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 4px;
+    margin-top: 0.5rem;
+    font-size: 1rem; /* Increased font size */
+}
+
+.feedback-form textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.feedback-form button {
+    padding: 0.75rem 1.5rem;
+    color: white;
+    background-color: #0056b3; /* Muted blue button background */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.feedback-form button:hover {
+    background-color: #003366; /* Darker blue on hover */
+}
+
+.support-info {
+    background-color: #f9f9f9; /* Slightly grey background */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light grey shadow */
+}
+
+.support-info h3 {
+    margin-top: 0;
+    color: #004080; /* Soft blue for section titles */
+}
+
+.support-info p {
+    margin: 0.5rem 0;
+}
+
+.support-info a {
+    color: #0056b3; /* Muted blue for links */
+    text-decoration: none;
+}
+
+.support-info a:hover {
+    text-decoration: underline;
+}
+
+.video-container {
+    position: relative;
+    padding-top: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    background: #000; /* Fallback color */
+    margin-bottom: 2rem;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
