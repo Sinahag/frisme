@@ -17,10 +17,15 @@
                 <h1>FrisMe</h1>
             </div>
             <nav>
-                <a href="#overview">Overview</a>
-                <a href="#manual">User Manual</a>
-                <a href="#demo">Product Demo</a>
-                <a href="#feedback">Feedback & Support</a>
+                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                    &#9776;
+                </button>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#manual">User Manual</a></li>
+                    <li><a href="#demo">Product Demo</a></li>
+                    <li><a href="#feedback">Feedback & Support</a></li>
+                </ul>
             </nav>
         </div>
     </header>
@@ -75,6 +80,17 @@
     <footer>
         <p>&copy; 2024 Aerotoss. All rights reserved.</p>
     </footer>
+
+    <script>
+        document.getElementById('nav-toggle').addEventListener('click', function () {
+            var navLinks = document.getElementById('nav-links');
+            if (navLinks.style.display === 'block') {
+                navLinks.style.display = 'none';
+            } else {
+                navLinks.style.display = 'block';
+            }
+        });
+    </script>
 </body>
 
 </html>

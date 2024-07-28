@@ -3,14 +3,14 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
-    background-color: #f4f4f4; /* Light grey background */
+    background-color: #f4f4f4;
 }
 
 header {
-    background-color: #e0f7fa; /* Light blue background */
+    background-color: #e0f7fa;
     color: #004080;
     padding: 1rem 2rem;
-    border-bottom: 3px solid #4a86b8; /* Darker blue border */
+    border-bottom: 3px solid #4a86b8;
 }
 
 .header-content {
@@ -27,7 +27,7 @@ header {
 }
 
 .logo {
-    max-width: 150px; /* Larger size */
+    max-width: 150px;
     height: auto;
     margin-right: 1rem;
 }
@@ -39,20 +39,34 @@ h1 {
 
 nav {
     display: flex;
+    align-items: center;
+}
+
+.nav-toggle {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #004080;
+}
+
+.nav-links {
+    display: flex;
     gap: 1rem;
 }
 
-nav a {
+.nav-links a {
     color: #004080;
     text-decoration: none;
     padding: 0.5rem 1rem;
     border-radius: 5px;
-    background-color: #b3e5fc; /* Light blue for navigation links */
+    background-color: #b3e5fc;
     font-size: 1rem;
 }
 
-nav a:hover {
-    background-color: #81d4fa; /* Darker blue for hover */
+.nav-links a:hover {
+    background-color: #81d4fa;
 }
 
 .container {
@@ -62,8 +76,8 @@ nav a:hover {
 }
 
 h2 {
-    color: #004080; /* Soft blue for section headings */
-    border-bottom: 2px solid #0056b3; /* Blue underline for headings */
+    color: #004080;
+    border-bottom: 2px solid #0056b3;
     padding-bottom: 0.5rem;
     margin-bottom: 1rem;
 }
@@ -75,15 +89,15 @@ h2 {
 .content img {
     max-width: 100%;
     height: auto;
-    border-radius: 8px; /* Rounded corners for images */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light grey shadow */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .button {
     display: inline-block;
     padding: 1rem 2rem;
     color: white;
-    background-color: #0056b3; /* Muted blue button background */
+    background-color: #0056b3;
     text-decoration: none;
     border-radius: 5px;
     font-size: 1rem;
@@ -92,28 +106,30 @@ h2 {
 }
 
 .button:hover {
-    background-color: #003366; /* Darker blue on hover */
+    background-color: #003366;
 }
 
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: #e0f7fa; /* Light blue footer background */
+    background-color: #e0f7fa;
     color: #004080;
-    border-top: 3px solid #4a86b8; /* Blue border on top */
+    border-top: 3px solid #4a86b8;
 }
 
-.feedback-form, .support-info {
-    background-color: #ffffff; /* White background */
+.feedback-form,
+.support-info {
+    background-color: #ffffff;
     padding: 2rem;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light grey shadow */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-bottom: 2rem;
 }
 
-.feedback-form h3, .support-info h3 {
+.feedback-form h3,
+.support-info h3 {
     margin-top: 0;
-    color: #004080; /* Soft blue for section titles */
+    color: #004080;
 }
 
 .feedback-form p {
@@ -129,10 +145,10 @@ footer {
 .feedback-form textarea {
     width: 100%;
     padding: 0.75rem;
-    border: 1px solid #ddd; /* Light grey border */
+    border: 1px solid #ddd;
     border-radius: 4px;
     margin-top: 0.5rem;
-    font-size: 1rem; /* Increased font size */
+    font-size: 1rem;
 }
 
 .feedback-form textarea {
@@ -143,7 +159,7 @@ footer {
 .feedback-form button {
     padding: 0.75rem 1.5rem;
     color: white;
-    background-color: #0056b3; /* Muted blue button background */
+    background-color: #0056b3;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -152,19 +168,19 @@ footer {
 }
 
 .feedback-form button:hover {
-    background-color: #003366; /* Darker blue on hover */
+    background-color: #003366;
 }
 
 .support-info {
-    background-color: #f9f9f9; /* Slightly grey background */
+    background-color: #f9f9f9;
     padding: 2rem;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light grey shadow */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .support-info h3 {
     margin-top: 0;
-    color: #004080; /* Soft blue for section titles */
+    color: #004080;
 }
 
 .support-info p {
@@ -172,7 +188,7 @@ footer {
 }
 
 .support-info a {
-    color: #0056b3; /* Muted blue for links */
+    color: #0056b3;
     text-decoration: none;
 }
 
@@ -182,12 +198,13 @@ footer {
 
 .video-container {
     position: relative;
-    padding-top: 56.25%; /* 16:9 aspect ratio */
+    padding-top: 56.25%;
     height: 0;
     overflow: hidden;
-    background: #000; /* Fallback color */
+    background: #000;
     margin-bottom: 2rem;
 }
+
 
 .video-container iframe {
     position: absolute;
