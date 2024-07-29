@@ -79,18 +79,21 @@ nav {
     }
 }
 
+/* Mobile styles */
 @media (max-width: 768px) {
     .nav-links {
         display: none; /* Hide menu by default on small screens */
         flex-direction: column;
         width: 100%;
+        height: 100vh; /* Full viewport height */
         background-color: #e0f7fa; /* Background color for mobile menu */
-        position: absolute;
-        top: 60px; /* Adjust based on header height */
+        position: fixed; /* Fixed position to cover the screen */
+        top: 0;
         left: 0;
-        padding: 1rem;
+        padding: 2rem; /* Add padding */
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         z-index: 1000;
+        overflow-y: auto; /* Scroll if needed */
     }
 
     .nav-links.active {
@@ -112,9 +115,16 @@ nav {
 
     .nav-links a {
         padding: 1rem; /* Larger touch target for mobile */
+        font-size: 1.25rem; /* Larger font size for better readability */
+        border-bottom: 1px solid #004080; /* Border between items */
         text-align: center; /* Center-align text */
     }
+
+    .nav-links a:last-child {
+        border-bottom: none; /* Remove border from the last item */
+    }
 }
+
 
 .container {
     max-width: 1200px;
