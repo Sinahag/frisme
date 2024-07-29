@@ -78,7 +78,6 @@ nav {
         display: flex; /* Show menu by default on desktop */
     }
 }
-
 /* Mobile styles */
 @media (max-width: 768px) {
     .nav-links {
@@ -94,19 +93,28 @@ nav {
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         z-index: 1000;
         overflow-y: auto; /* Scroll if needed */
+        transition: transform 0.3s ease; /* Smooth transition */
+        transform: translateY(-100%); /* Initially hide above the viewport */
     }
 
     .nav-links.active {
         display: flex; /* Show menu when active */
+        transform: translateY(0); /* Slide down into view */
     }
 
     .nav-toggle {
         display: block; /* Show the toggle button on small screens */
+        font-size: 2rem; /* Larger button for easier access */
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: #004080;
+        padding: 0.5rem; /* Add some padding for click area */
+        margin: 0;
     }
 
     .header-content {
-        flex-direction: column;
-        align-items: flex-start;
+        position: relative; /* Make sure header is a containing block */
     }
 
     .logo-title {
@@ -118,6 +126,8 @@ nav {
         font-size: 1.25rem; /* Larger font size for better readability */
         border-bottom: 1px solid #004080; /* Border between items */
         text-align: center; /* Center-align text */
+        color: #004080; /* Ensure text color is visible */
+        text-decoration: none; /* Remove underline */
     }
 
     .nav-links a:last-child {
