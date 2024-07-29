@@ -54,17 +54,16 @@
             <div class="feedback-form">
                 <h3>We Value Your Feedback</h3>
                 <p>We'd love to hear your thoughts, suggestions, or any issues you might be facing with Aerotoss FrisMe.
-                    Please
-                    fill out the form below:</p>
+                    Please fill out the form below:</p>
                 <form action="https://formspree.io/f/xeojanlp" method="POST">
                     <label>
                         Your email:
-                        <input type="email" name="email">
+                        <input type="email" name="email" required>
                     </label>
                     <br>
                     <label>
                         Your message:
-                        <textarea name="message"></textarea>
+                        <textarea name="message" required></textarea>
                     </label>
                     <button type="submit">Send</button>
                 </form>
@@ -81,16 +80,7 @@
         <p>&copy; 2024 Aerotoss. All rights reserved.</p>
     </footer>
 
-    <script>
-        document.getElementById('nav-toggle').addEventListener('click', function () {
-            var navLinks = document.getElementById('nav-links');
-            if (navLinks.style.display === 'block') {
-                navLinks.style.display = 'none';
-            } else {
-                navLinks.style.display = 'block';
-            }
-        });
-    </script>
+    <script src="scripts.js"></script>
 </body>
 
 </html>
